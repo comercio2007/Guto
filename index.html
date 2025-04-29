@@ -1,188 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>CLAREAMENTO DENTÁRIO</title>
-  <style>
-    body {
-      background: #EE39A3;
-      
-    }
-    
-    h1 {
-      color: red;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    
-    p {
-      color: white;
-      
-    }
-    
-    #pri {
-      border-radius: 8px;
-      box-shadow: 0 4px 14px rgba(8, 8, 9, 1);
-    }
-    
-    button {
-      background: #711C4E;
-      border-radius: 9px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
-      border: none;
-      width: 98%;
-      height: 50px;
-      color: white;
-    }
-    
-    .container {
-      outline-style: dashed;
-      padding: 8px;
-      margin-bottom: 10px;
-      margin-top: 15px;
-      border-radius: 10px;
-    }
-    
-    .containe {
-      outline-style: double;
-      padding: 8px;
-      margin-bottom: 10px;
-      margin-top: 15px;
-      border-radius: 10px;
-    }
-    
-    .dep {
-      background: white;
-      border-radius: 9px;
-    }
-    
-    img {
-      border-radius: 7px;
-      margin-top: 10px;
-      width: 95%;
-    }
-    
-    .ask {
-      margin: none;
-      background: #3A142A;
-      width: 100%;
-      margin-top: 16px;
-      border-radius: 7px;
-      padding: 8px;
-    }
-    
-    #bt:hover {
-      transform: scale(1.1);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em Contato Conosco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f5f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #25D366, #128C7E);
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #128C7E;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+        
+        p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-  
-  <center><h1><b>Clareamento dentário 100% natura</b></h1></center>
-  <center><p>Para os seus dentes sairem do amarelo para o branco puro, em 2 semanas</p></center>
-  <center><img id="pri" src="dente.png"></center>
-   <hr>
-   
-   <center><h style='color: white; font-weight: bold; font-size: 24px'>O que é um clareamento dentário?</h></center>
-   <center><img src="mock-00001- (5).png"></center>
-   <p style='color: white; color: red'>É um método naqual, melhora a cor dos seus dentes ou seja do amarelo para o branco</p>
-   
-   <center><p>Apenas um método, disponível no ebook o método master, 100% aprovado </p></center>
-   <center><p>Clika em comprar agora para comprar o ebook</p></center>
-   <button onclick="bt()" id="bt">QUERO COMPRAR AGORA</button>
-   
-   <div class="container">
-     <center><h style='color: white'>ECONOMIA DE DINHEIRO</h></center>
-     <center><p>O clareamento dentário caseiro com produtos baratos é muito mais acessível do que procedimentos profissionais, permitindo que você obtenha resultados satisfatórios sem gastar muito.</p></center>
-     
-   </div>
-   <div class="container">
-     <center><h style='color: white'>CONVENIÊNCIA</h></center>
-     <center><p>Você pode realizar o clareamento dentário em casa, no seu próprio tempo e conforto, sem a necessidade de agendar consultas em clínicas dentárias.</p></center>
-     
-   </div>
-   <div class="container">
-   <center><h style='color: white'>RESULTADOS EFICAZES</h></center>
-     <center><p>Apesar de utilizar produtos simples e fáceis de encontrar, o clareamento dentário caseiro pode proporcionar resultados visíveis e satisfatórios, deixando seus dentes mais brancos e brilhantes.</p></center>
-   
-   </div>
-   
-   <div class="dep">
-     <center><b><h>DEPOIMENTOS</h></b></center>
-     <center><p style='color: red; font-size: 40px'>ESTE É O PODER DE UM MÉTODO FUNCIONAL</p></center>
-     
-       <center>
-         <img src="prova.png">
-       </center>
-       <center>
-         <img src="prova1.png">
-       </center>
-        <center>
-          <img src="prova2.png">
-        </center>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="logo">
+        <h1>Vamos Conversar!</h1>
+        <p>Estamos ansiosos para falar com você. Clique no botão abaixo para iniciar uma conversa no WhatsApp com nossa equipe.</p>
+        <p>Sua mensagem pré-definida será: <strong>"Olá, posso saber mais sobre isso"</strong></p>
+        <a href="https://wa.me/258872390673?text=Olá,%20posso%20saber%20mais%20sobre%20isso" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Enviar Mensagem
+        </a>
     </div>
-   
-   <div class="containe">
-     <center><h style='color: white'>INTERESSE EM CUIDADOS PESSOAIS</h></center>
-     <center><p>Manter uma boa higiene bucal e em cuidar da saúde dos seus dentes.</p></center>
-     
-   </div>
-   <div class="containe">
-     <center><h style='color: white'>BUSCA POR ALTERNATIVAS NATURAIS</h></center>
-     <center><p>Prefere opções de tratamento mais naturais e menos invasivas.</p></center>
-     
-   </div>
-   <div class="containe">
-   <center><h style='color: white'>AUTONOMIA E PRATICIDADE</h></center>
-     <center><p>Opta por adquirir um ebook sobre clareamento dental caseiro valoriza a autonomia de cuidar da própria saúde bucal no conforto de casa, de forma prática e acessível.</p></center>
-   
-   </div>
-   <center><p>Clika em comprar agora para comprar o ebook</p></center>
-   <button onclick="bt()" id="bt">QUERO COMPRAR AGORA</button>
-   
-   
-   
-   <div class="ask">
-     <center><h style='color: white; font-size: 24px;'>Perguntas frequentes</h></center>
-     <details>
-       <summary style='margin-top: 15px'>Como é feito o pagamento?</summary>
-       <p>O pagamento é feito de forma automática, usando as carteiras locais.</p>
-     </details>
-     
-      <details>
-       <summary>Como recebo o ebook?</summary>
-       <p>Após o pagamento ser bem sucedido será levado para tela de sucesso que tera o botão para baixar o ebook.</p>
-     </details>
-     
-      <details>
-        <summary>Como entrar em contato?</summary>
-        <p>podes entrar em contato com nosco pelo WhatsApp: +258 84 920 0525, pelo Facebook: comércio Moz.</p>
-      </details>
-      
-      <details>
-        <summary>O que faço se não receber o ebook?</summary>
-        <p>Entre em contato pelo número: +258 84 920 0525, WhatsApp, chamadas ou sms </p>
-      </details>
-      
-      <details>
-        <summary>Qual é a garantia do ebook?</summary>
-        <p>O ebook tem uma garantia de 7dias se a receita não fazer efeito dentro de 7dias pode contactar pelo número existe nao página para receber o reembolso do valor pago!</p>
-      </details>
-   </div>
-   
-   
-   <div class="fim">
-     <center><p>&copy 2025 todos os direitos reservados|| comércio Moz</p></center>
-   </div>
-   
-   <script>
-     function bt() {
-       window.open("https://mozpayment.co.mz/pagaemento?check=1740070985635x418261111993794600");
-     }
-   </script>
+
+    <script>
+        // Redirecionamento automático opcional após 5 segundos
+        setTimeout(function() {
+            window.location.href = "https://wa.me/258872390673?text=Olá,%20posso%20saber%20mais%20sobre%20isso";
+        }, 5000);
+    </script>
 </body>
 </html>
